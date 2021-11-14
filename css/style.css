@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap');
+
+* {box-sizing: border-box;
+    margin: 0;
+}
+
+body {width: 1024px;
+    height: 2000px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.descuentos {padding: 10px;
+    font-size: 15px;
+    background-color: #1CD1B0;
+}
+
+h1 {position: sticky;
+    top: 10px;
+    z-index: 2;
+    padding: 28px;
+    font-size: 40px;
+    font-weight: normal;
+    background-color: #00669F;
+}
+
+.tarjeta {position: relative;
+    top: 154px;
+    left: 32px;
+    display: inline-block;
+    width: 300px;
+}
+
+.tarjeta.dos {left: 62px;
+}
+
+.tarjeta.tres {left: 92px;
+}
+
+.heart {position: absolute;
+    top: 15.88px;
+    left: 21px;
+}
+
+.perfil {position: absolute;
+    top: 128px;
+    left: 90px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+h2 {position: absolute;
+    top: 267px;
+    left: 89px;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.harley {left: 65px;
+}
+
+.texto {position: absolute;
+    top: 192px;
+    width: 300px;
+    height: 336px;
+    padding: 118px 0px 0px 16px;
+    color: #333333;
+    font-size: 16px;
+    background-color: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p {width: 267px;
+}
+
+button {position: absolute;
+    top: 269px;
+    left: 85px;
+    width: 128.78px;
+    height: 48.52px;
+    color: #F3F3F3;
+    font-size: 15px;
+    background-color: #00669F;
+    border: none;
+}
+
+footer {position: absolute;
+    top: 962px;
+    width: 1024px;
+    height: 51px;
+    padding: 16px;
+    color: #FFF9F9;
+    font-size: 16px;
+    background-color: #00669F;
+}
