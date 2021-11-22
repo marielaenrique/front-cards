@@ -4,9 +4,7 @@
     margin: 0;
 }
 
-body {width: 1024px;
-    height: 2000px;
-    font-family: 'Roboto', sans-serif;
+body {font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
@@ -17,24 +15,31 @@ body {width: 1024px;
 
 h1 {position: sticky;
     top: 10px;
-    z-index: 2;
+    z-index: 1;
     padding: 28px;
     font-size: 40px;
     font-weight: normal;
     background-color: #00669F;
 }
 
-.tarjeta {position: relative;
-    top: 154px;
-    left: 32px;
-    display: inline-block;
+section {display: flex;
+    justify-content: space-evenly;
+}
+
+section article {position: relative;
+    margin-top: 154px;
     width: 300px;
+    color: #333333;
+    text-align: center;
+    background-color: #F3F3F3;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.tarjeta.dos {left: 62px;
-}
-
-.tarjeta.tres {left: 92px;
+.image {height: 193px;
+    background: url(../img/fondo1.png);
+    background-size: cover;
+    border-radius: 16px 16px 0px 0px;
 }
 
 .heart {position: absolute;
@@ -44,39 +49,25 @@ h1 {position: sticky;
 
 .perfil {position: absolute;
     top: 128px;
-    left: 90px;
-    z-index: 1;
+    left: calc(50% - 125px/2);
+    width: 120px;
+    height: 118px;
     border-radius: 50%;
 }
 
-h2 {position: absolute;
-    top: 267px;
-    left: 89px;
-    z-index: 1;
-    font-size: 30px;
+h2 {margin: 73px 0px 20px 0px;
+    font-size: 28px;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
-.harley {left: 65px;
-}
-
-.texto {position: absolute;
-    top: 192px;
-    width: 300px;
-    height: 336px;
-    padding: 118px 0px 0px 16px;
-    color: #333333;
+p {margin: 0px 17px 0px 17px;
+    height: 230px;
     font-size: 16px;
-    background-color: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: left;
 }
 
-p {width: 267px;
-}
-
-button {position: absolute;
-    top: 269px;
-    left: 85px;
+button {margin-bottom: 18px;
     width: 128.78px;
     height: 48.52px;
     color: #F3F3F3;
@@ -85,12 +76,78 @@ button {position: absolute;
     border: none;
 }
 
-footer {position: absolute;
-    top: 962px;
-    width: 1024px;
+footer {display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 151px;
     height: 51px;
-    padding: 16px;
     color: #FFF9F9;
     font-size: 16px;
     background-color: #00669F;
+}
+
+.git {position: absolute;
+    right: 30px;
+    width: 80px;
+}
+
+
+@media (max-width: 1300px)
+
+{   section {flex-wrap: wrap;
+    }
+    
+    section article {width: 35%;
+        max-width: 400px;
+        min-width: 300px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 700px)
+
+{
+    section article {width: 90%;
+        min-width: 200px;
+    }
+    
+    .harley {display: none;
+    }
+    
+    footer {flex-direction: column;
+        height: 80px;
+        font-size: 14px;
+    }
+    
+    .git {position: static;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 330px)
+
+{
+    section article {min-width: 150px;
+    }
+    
+    h1 {padding: 10px;
+        font-size: 30px;
+    }
+    
+    h2 {font-size: 20px;
+    }
+    
+    p {height: 380px;
+        font-size: 14px;
+    }
+    
+    button {width: 40%;
+    }
+    
+    footer {min-width: 150px;
+        height: 100px;
+    }
 }
